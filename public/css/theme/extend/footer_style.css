@@ -1,0 +1,138 @@
+/*Content CSS*/
+footer {
+    width: 100%;
+    background: rgb(226, 225, 255, 0.5);
+}
+
+footer #ft_top {
+    padding: 60px 0 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer #ft_bot {
+    padding: 35px 0 60px;
+}
+
+.ft_copy {
+    font-size: 13px;
+    font-weight: 300;
+    color: rgba(43, 41, 41, 0.8);
+    text-align: left;
+    word-break: keep-all;
+    line-height: 24px;
+}
+
+.ft_copy span {
+    color: rgba(43, 41, 41, 0.8);
+    font-weight: 300;
+    display: block;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.ft_copy span a {
+    color: rgba(255, 255, 255, 0.3) !important;
+    font-weight: 300
+}
+
+/*ft_q_menu */
+#ft_q_menu {
+    display: flex;
+}
+
+#ft_q_menu li::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: #f8f8f8;
+    margin: 0 50px;
+    opacity: 0.5;
+}
+
+#ft_q_menu li:last-child::after {
+    display: none;
+}
+
+#ft_q_menu li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #eceded;
+    transition: color .3s ease;
+    word-break: keep-all;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#ft_q_menu li a:hover {
+    color: #7708ff;
+}
+
+
+
+#top_btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border: 1px solid #333;
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    z-index: 90;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#top_btn:hover {
+    border-color: #7708ff;
+    background: #7708ff;
+    color: #fff;
+}
+
+.scrolled #top_btn {
+    opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 1023px) {
+
+    footer #ft_top {
+        display: none;
+    }
+
+    footer #ft_bot {
+        padding: 35px 0;
+    }
+
+    .ft_copy {
+        text-align: center;
+        font-size: 12px;
+        line-height: 21px;
+    }
+
+    .ft_copy span {
+        font-size: 12px;
+    }
+
+    .ft_copy span a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #top_btn {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+        line-height: 41px;
+    }
+
+}
